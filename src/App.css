@@ -1,0 +1,142 @@
+.App-header {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 10;
+  position: fixed;
+  box-sizing: content-box;
+  background-color: rgb(51, 51, 51);
+  justify-self: flex-start;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-content {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-right: 16px;
+  background-color: rgb(51, 51, 51);
+  position: absolute;
+  flex-wrap: wrap;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  box-shadow: unset;
+  transition: transform 400ms linear 0s;
+}
+
+.logoContainer {
+  display: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.img-logo {
+  box-shadow: none;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 16px;
+}
+
+.rightContainer {
+  display: flex;
+  -webkit-box-pack: unset;
+  justify-content: unset;
+  -webkit-box-flex: 0;
+  flex-grow: 0;
+  margin-right: 8px;
+}
+
+.signInButton {
+  font-size: 14px;
+  font-family: Roboto;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  width: 85px;
+  min-width: 0px;
+  height: 48px;
+  align-self: center;
+  margin-left: unset;
+  margin-right: unset;
+  outline: none;
+  border-radius: 24px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-image: initial;
+  padding: 0px;
+}
+
+.cartContainer {
+  display: none;
+  cursor: pointer;
+  margin-left: 16px;
+  position: relative;
+  padding-right: 20px;
+}
+
+.productAmount {
+  width: 19px;
+  height: 19px;
+  font-size: 11px;
+  color: rgb(255, 197, 0);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+}
+
+.cartImageContainer {
+  padding: 0px;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 767.98px) {
+  .nav {
+    position: unset;
+    flex-wrap: unset;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    box-shadow: unset;
+  }
+
+  .logoContainer {
+    display: block;
+  }
+
+  .rightContainer {
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    margin-right: 0px;
+  }
+
+  .cartContainer {
+    display: flex;
+  }
+}
